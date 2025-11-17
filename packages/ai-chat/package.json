@@ -148,7 +148,7 @@
     "lodash-es": "^4.17.0",
     "markdown-it": "^14.1.0",
     "react-intl": "^7.1.6",
-    "react-player": "2.15.1",
+    "react-player": "3.4.0",
     "swiper": "^11.1.1",
     "tabbable": "^6.2.0",
     "tslib": "^2.6.3",
