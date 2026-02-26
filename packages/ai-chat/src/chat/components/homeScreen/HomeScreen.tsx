@@ -81,8 +81,6 @@ function HomeScreenComponent({
   const homeScreenWithStarters =
     starters?.isOn && Boolean(starters.buttons?.length);
 
-  const homeScreenGreetingClass = "cds-aichat--home-screen__greeting";
-
   return (
     <div
       data-testid={PageObjectId.HOME_SCREEN_PANEL}
@@ -94,7 +92,7 @@ function HomeScreenComponent({
       <div
         className="cds-aichat--home-screen__content"
         role="dialog"
-        aria-describedby={homeScreenGreetingClass}
+        aria-label={languagePack.homeScreen_ariaHomeScreenContent}
       >
         <div className="cds-aichat--home-screen__body-wrapper">
           <div
@@ -108,7 +106,9 @@ function HomeScreenComponent({
           >
             <div className="cds-aichat--home-screen__initial-content">
               {!customContentOnly && (
-                <h2 className={homeScreenGreetingClass}>{greeting}</h2>
+                <h2 className="cds-aichat--home-screen__greeting">
+                  {greeting}
+                </h2>
               )}
               {!customContentOnly && homeScreenWithStarters && (
                 <div
